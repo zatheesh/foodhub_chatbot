@@ -1,0 +1,10 @@
+huggingface_hub==0.32.6
+pandas==2.2.2
+streamlit==1.43.2
+langchain>=0.3
+langchain-groq>=0.2
+langchain-community>=0.3
+langchain-core>=0.3
+groq>=0.4
+sqlalchemy>=2.0
+python-dotenv>=1.0
