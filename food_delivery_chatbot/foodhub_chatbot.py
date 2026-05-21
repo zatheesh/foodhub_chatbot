@@ -16,8 +16,14 @@ from langchain_community.agent_toolkits import (
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
+BASE_DIR = os.path.dirname(
+    os.path.abspath(__file__)
+)
 
-DB_PATH = "/content/food_delivery_chatbot/customer_orders.db"
+DB_PATH = os.path.join(
+    BASE_DIR,
+    "customer_orders.db"
+)
 
 groq_api_key = os.getenv("GROQ_API_KEY")
 
