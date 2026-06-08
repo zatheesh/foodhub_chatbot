@@ -8,7 +8,8 @@ usernames = ["satheesh", "admin"]
 # Generate hashed passwords once
 passwords = ["foodhub123", "admin123"]
 
-hashed_passwords = stauth.Hasher(passwords).generate()
+#hashed_passwords = stauth.Hasher(passwords).generate()
+hashed_passwords = stauth.Hasher.hash_list(passwords)
 
 authenticator = stauth.Authenticate(
     {
