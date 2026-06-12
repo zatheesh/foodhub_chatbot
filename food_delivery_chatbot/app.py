@@ -2,7 +2,7 @@ import streamlit as st
 from foodhub_chatbot import chatagent
 
 st.set_page_config(
-    page_title="FoodHub Customer Support",
+    page_title="FoodHub Food Delivery Customer Support Chatbot",
     page_icon="🍔",
     layout="centered"
 )
@@ -41,7 +41,7 @@ if st.sidebar.button("Logout"):
     st.session_state.username = None
     st.rerun()
 
-st.title("🍔 FoodHub Customer Support Chatbot")
+st.title("🍔 FoodHub Food Delivery Customer Support Chatbot")
 st.caption("Ask about orders, delivery status, refunds, payments, or cancellations.")
 
 if "messages" not in st.session_state:
